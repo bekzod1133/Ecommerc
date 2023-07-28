@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  {% for product in prodicts %}
+    <div class="product">
+      <div class="name">{{product.name}}</div>
+      <p> {{product.desc}}</p>
+      <p>{{product.price}}</p>
+      <P>{{product.image}}</P>
+    </div>
+    <a href="{% url 'add_to_cart'%}">a]Add To Cart</a>
+  {% endfor %}x
+</body>
+</html>
